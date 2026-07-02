@@ -1,0 +1,3 @@
+read_file	total_sequences	total_bases	sequence_length	gc_percent	poor_quality_sequences	warnings
+SRR32633603_1.fastq	26740039	4 Gbp	150	51	0	Per tile sequence quality; Per base sequence content; Per sequence GC content
+SRR32633603_2.fastq	26740039	4 Gbp	150	51	0	Per sequence GC content

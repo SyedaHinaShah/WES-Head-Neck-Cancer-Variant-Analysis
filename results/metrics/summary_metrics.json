@@ -1,0 +1,75 @@
+{
+  "raw_variants": 751,
+  "filtered_snps": 621,
+  "pass_snps": 330,
+  "filtered_out_snps": 291,
+  "pass_rate_pct": 53.1,
+  "raw_qual_mean": 480.06,
+  "raw_qual_median": 166.1,
+  "filtered_qual_mean": 513.3,
+  "filtered_qual_median": 166.14,
+  "max_qual": 10192.06,
+  "genotype_counts_raw": {
+    "0/1": 587,
+    "1/1": 138,
+    "1/2": 26
+  },
+  "genotype_counts_filtered": {
+    "0/1": 497,
+    "1/1": 109,
+    "1/2": 15
+  },
+  "transition_transversion_filtered": {
+    "Transition": 455,
+    "Transversion": 151,
+    "Other": 15
+  },
+  "pass_genotype_counts": {
+    "0/1": 234,
+    "1/1": 86,
+    "1/2": 10
+  },
+  "pass_qual_mean": 579.66,
+  "pass_qual_median": 172.14,
+  "top_regions_filtered": {
+    "20:46684364-46687231": 74,
+    "7:87322942-87325444": 48,
+    "17:43067273-43067695": 32,
+    "7:87339148-87341684": 30,
+    "15:43403060-43407570": 27,
+    "3:179196018-179199177": 24,
+    "17:43047642-43048473": 24,
+    "13:32375910-32376791": 23,
+    "17:7661778-7662014": 19,
+    "17:43097492-43097586": 19
+  },
+  "top_regions_pass": {
+    "20:46684364-46687231": 69,
+    "7:87322942-87325444": 46,
+    "17:43097492-43097586": 18,
+    "7:87339148-87341684": 18,
+    "12:25227233-25227997": 13,
+    "13:32374961-32375210": 12,
+    "3:179202976-179203789": 11,
+    "3:179218209-179219735": 11,
+    "17:7675052-7675493": 10,
+    "13:32375910-32376791": 8
+  },
+  "filter_counts": {
+    "PASS": 330,
+    "snp_filter": 291
+  },
+  "sample_id": "sample1",
+  "reference": "GRCh38/hg38 where used in R scripts",
+  "tools": [
+    "GATK HaplotypeCaller",
+    "GATK SelectVariants",
+    "GATK VariantFiltration",
+    "R/Bioconductor VariantAnnotation",
+    "vcfR",
+    "SNPRelate",
+    "ggplot2",
+    "pheatmap",
+    "WSL Ubuntu"
+  ]
+}

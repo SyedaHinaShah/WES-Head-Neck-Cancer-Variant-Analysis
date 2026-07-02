@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Whole Exome Sequencing SNP Analysis for Head and Neck Cancer"
+message: "Please cite this repository if you reuse the code, workflow documentation, or figures."
+type: software
+authors:
+  - family-names: Shah
+    given-names: Syeda Hina
+version: 1.0.0
+date-released: 2026-07-02
+license: MIT
+keywords:
+  - whole exome sequencing
+  - WES
+  - head and neck cancer
+  - SNP analysis
+  - GATK
+  - R
+  - bioinformatics
