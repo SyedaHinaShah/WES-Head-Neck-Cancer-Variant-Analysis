@@ -8,7 +8,7 @@ The original paired-end sequencing reads used in this project were obtained from
 - **Database:** NCBI Sequence Read Archive
 - **Analysis:** independent secondary bioinformatics reanalysis
 
-An `SRR` accession identifies an SRA **run**. Before final publication, copy the associated BioProject, BioSample, experiment accession, library strategy, platform, and original publication citation from the NCBI record into this file.
+The sequencing run used in this project is NCBI SRA accession `SRR32633603`. Associated BioProject, BioSample, experiment, platform, library strategy, and publication information should be taken directly from the official NCBI record.
 
 ## Download example
 
@@ -36,4 +36,4 @@ The original sequencing data were generated and deposited by the investigators a
 
 ## Data-sharing boundary
 
-This repository does not include raw FASTQ files, BAM files, or large reference files. Small derived VCF and summary files are included for reproducibility. Human genomic data can remain sensitive even when the source reads are publicly accessible; users should follow the original record's consent, attribution, and data-use conditions.
+This public repository does not include raw FASTQ, SAM, BAM, sample-level VCF, GDS, or large reference files. It provides analysis scripts, aggregate summary metrics, curated figures, and workflow documentation.
