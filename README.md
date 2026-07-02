@@ -90,20 +90,6 @@ R/Bioconductor + Python downstream analysis
         ↓
 Metrics, figures, portfolio, presentation, and GitHub Pages site
 ```
-
-## Repository structure
-
-```text
-DATASET.md             Dataset source, download, and attribution
-data/                   Data-access and reference documentation only
-scripts/                Clean downstream analysis and setup scripts
-workflow/               Pipeline documentation, provenance, and reproducibility template
-results/                Summary metrics and curated scientific figures
-portfolio/              Research portfolio in PDF and Markdown
-presentation/           Professor-facing PowerPoint and preview
-docs/                   GitHub Pages portfolio website
-```
-
 ## Featured outputs
 
 ### Sequencing quality
@@ -151,11 +137,6 @@ Sample-level VCF/GDS files are intentionally not included in this slim public po
 This is a **single-run training and research-portfolio analysis**, not a clinical diagnostic study or a population association analysis. The supplied VCF was generated against a project-specific target reference (`tumor_genes.fa`), and several contig identifiers represent genomic target regions rather than standard whole-chromosome contigs. Results therefore demonstrate read processing, variant calling, filtering, and regional visualization; they do not establish disease association, population frequency, clinical pathogenicity, or treatment relevance.
 
 Original exploratory scripts are retained separately and clearly labelled. Simulated exploratory PCA/GWAS-style plots must not be presented as biological evidence from this single-sample VCF.
-
-## Portfolio and presentation
-
-- [Research portfolio PDF](portfolio/WES_HNC_Research_Portfolio.pdf)
-- [Professor presentation PPTX](presentation/WES_HNC_Professor_Presentation.pptx)
 
 ## Citation and licensing
 
