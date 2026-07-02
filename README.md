@@ -34,10 +34,12 @@ I independently performed and documented the computational workflow:
 6. Called variants using GATK HaplotypeCaller.
 7. Selected SNPs and applied GATK hard filters.
 8. Analysed the VCF using R/Bioconductor and Python.
-9. Produced summary tables, figures, a portfolio document, and a professor-facing presentation.
+9. Produced summary tables, scientific figures, and reproducibility documentation.
 
 The exact GATK commands and versions retained in the VCF header are provided in [`workflow/gatk_provenance_from_vcf_header.txt`](workflow/gatk_provenance_from_vcf_header.txt). Earlier preprocessing commands were not preserved in the supplied history, so [`workflow/full_pipeline_template.sh`](workflow/full_pipeline_template.sh) is explicitly labelled as a reproducibility template rather than an exact execution log.
 
+
+## Key results
 ## Project highlights
 
 | Area | Evidence in this repository |
@@ -46,12 +48,10 @@ The exact GATK commands and versions retained in the VCF header are provided in 
 | Sequencing quality control | Selected FastQC summaries and paired-read quality plots |
 | Read preprocessing | fastp stage documented in the workflow |
 | Alignment and BAM processing | BWA, SAMtools, and read-group processing documented |
-| Variant calling provenance | GATK commands and version metadata retained in VCF headers |
-| Variant filtering | `QD < 2.0 || FS > 60.0 || MQ < 40.0` |
+| Variant calling provenance | GATK commands and version metadata retained from VCF headers |
+| Variant filtering | GATK hard filtering using QD below 2.0, FS above 60.0, or MQ below 40.0 |
 | Reproducible downstream analysis | Clean R/Bioconductor and Python scripts |
-| Scientific communication | Portfolio PDF and professor-facing presentation |
-
-## Key results
+| Scientific communication | Methods, results, limitations, and reproducibility documentation |
 
 | Metric | Result |
 |---|---:|
@@ -88,7 +88,7 @@ GATK SelectVariants + VariantFiltration
         ↓
 R/Bioconductor + Python downstream analysis
         ↓
-Metrics, figures, portfolio, presentation, and GitHub Pages site
+Metrics, figures, documentation, and GitHub Pages site
 ```
 ## Featured outputs
 
@@ -134,9 +134,9 @@ Sample-level VCF/GDS files are intentionally not included in this slim public po
 
 ## Interpretation and limitations
 
-This is a **single-run training and research-portfolio analysis**, not a clinical diagnostic study or a population association analysis. The supplied VCF was generated against a project-specific target reference (`tumor_genes.fa`), and several contig identifiers represent genomic target regions rather than standard whole-chromosome contigs. Results therefore demonstrate read processing, variant calling, filtering, and regional visualization; they do not establish disease association, population frequency, clinical pathogenicity, or treatment relevance.
+This is a **single-run training and research-portfolio analysis**, not a clinical diagnostic study or a population association analysis. The supplied VCF was generated against a project-specific target reference (`tumor_genes.fa`), and several contig identifiers represent genomic target regions rather than standard whole-chromosome contigs. Results therefore, demonstrate read processing, variant calling, filtering, and regional visualization; they do not establish disease association, population frequency, clinical pathogenicity, or treatment relevance.
 
-Original exploratory scripts are retained separately and clearly labelled. Simulated exploratory PCA/GWAS-style plots must not be presented as biological evidence from this single-sample VCF.
+Only curated scripts, aggregate results, and final figures are included in this public repository. These results should not be interpreted as evidence of clinical pathogenicity, disease association, population-level significance, or treatment relevance must not be presented as biological evidence from this single-sample VCF.
 
 ## Citation and licensing
 
