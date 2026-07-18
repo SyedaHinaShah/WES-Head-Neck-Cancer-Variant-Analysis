@@ -149,6 +149,14 @@ These results should not be interpreted as evidence of clinical pathogenicity, d
 
 Only curated scripts, aggregate results, and final figures are included in this public repository. These results should not be interpreted as evidence of clinical pathogenicity, disease association, population-level significance, or treatment relevance must not be presented as biological evidence from this single-sample VCF.
 
+"This analysis represents a computational reanalysis of publicly available sequencing data. Due to the absence of matched normal samples, variants were interpreted as candidate genomic alterations rather than confirmed somatic mutations."
+
+##Future improvements
+Ensembl VEP/SnpEff annotation
+COSMIC/ClinVar annotation
+Mutational signature analysis
+Copy number variation analysis
+
 ## Citation and licensing
 
 Please cite the original NCBI dataset/study and this repository when reusing the workflow or figures. Code and original repository documentation are released under the MIT License. Sequencing data, derived genomic data, FastQC assets, and third-party materials remain subject to their original data-use conditions. Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
