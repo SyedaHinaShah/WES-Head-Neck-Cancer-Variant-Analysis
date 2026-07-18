@@ -152,10 +152,10 @@ Only curated scripts, aggregate results, and final figures are included in this 
 "This analysis represents a computational reanalysis of publicly available sequencing data. Due to the absence of matched normal samples, variants were interpreted as candidate genomic alterations rather than confirmed somatic mutations."
 
 ##Future improvements
-Ensembl VEP/SnpEff annotation
-COSMIC/ClinVar annotation
-Mutational signature analysis
-Copy number variation analysis
+**Ensembl VEP/SnpEff annotation
+**COSMIC/ClinVar annotation
+**Mutational signature analysis
+**Copy number variation analysis
 
 ## Citation and licensing
 
