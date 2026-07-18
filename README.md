@@ -8,8 +8,7 @@
 
 This repository presents an independent reanalysis of publicly available sequencing reads from **NCBI Sequence Read Archive run `SRR32633603`**. It documents read quality assessment, read preprocessing, alignment and SAM/BAM processing, GATK variant calling and hard filtering, and downstream analysis in R and Python.
 
-> **Purpose:** demonstrate practical and reproducible bioinformatics skills for graduate research, research assistant, internship, and fully funded MSc/MPhil/PhD applications.
-
+> **Purpose:** "This repository demonstrates a reproducible computational workflow for whole-exome sequencing variant analysis using publicly available sequencing data."
 ## Dataset and attribution
 
 - **Source repository:** NCBI Sequence Read Archive (SRA)
@@ -41,6 +40,17 @@ The exact GATK commands and versions retained in the VCF header are provided in 
 
 ## Representative workflow metrics
 The following aggregate metrics are provided solely to demonstrate successful pipeline execution and quality-control reporting. They are not presented as biological discoveries, disease-associated findings, or clinically interpretable results.
+## Computational tools
+
+- Quality control: FastQC, MultiQC
+- Read preprocessing: fastp
+- Alignment: BWA-MEM
+- BAM processing: SAMtools, Picard
+- Variant calling: GATK HaplotypeCaller
+- Variant filtering: GATK VariantFiltration
+- Statistical analysis and visualization: R, Python
+- Reproducibility: GitHub documentation
+  
 ## Project highlights
 
 | Area | Evidence in this repository |
