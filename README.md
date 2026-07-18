@@ -39,7 +39,8 @@ I independently performed and documented the computational workflow:
 The exact GATK commands and versions retained in the VCF header are provided in [`workflow/gatk_provenance_from_vcf_header.txt`](workflow/gatk_provenance_from_vcf_header.txt). Earlier preprocessing commands were not preserved in the supplied history, so [`workflow/full_pipeline_template.sh`](workflow/full_pipeline_template.sh) is explicitly labelled as a reproducibility template rather than an exact execution log.
 
 
-## Key results
+## Representative workflow metrics
+The following aggregate metrics are provided solely to demonstrate successful pipeline execution and quality-control reporting. They are not presented as biological discoveries, disease-associated findings, or clinically interpretable results.
 ## Project highlights
 
 | Area | Evidence in this repository |
@@ -134,7 +135,7 @@ Sample-level VCF/GDS files are intentionally not included in this slim public po
 
 ## Interpretation and limitations
 
-This is a **single-run training and research-portfolio analysis**, not a clinical diagnostic study or a population association analysis. The supplied VCF was generated against a project-specific target reference (`tumor_genes.fa`), and several contig identifiers represent genomic target regions rather than standard whole-chromosome contigs. Results therefore, demonstrate read processing, variant calling, filtering, and regional visualization; they do not establish disease association, population frequency, clinical pathogenicity, or treatment relevance.
+These results should not be interpreted as evidence of clinical pathogenicity, disease association, population-level significance, or treatment relevance. The repository is intended to demonstrate a reproducible bioinformatics workflow using publicly available data rather than to present novel biological or clinical findings.
 
 Only curated scripts, aggregate results, and final figures are included in this public repository. These results should not be interpreted as evidence of clinical pathogenicity, disease association, population-level significance, or treatment relevance must not be presented as biological evidence from this single-sample VCF.
 
